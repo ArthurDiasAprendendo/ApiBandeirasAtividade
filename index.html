@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Bandeiras!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container col-6 d-flex flex-column align-items-center bg-light-subtle mt-5 p-4 border rounded">
+
+        <h1>Qual é o país desta bandeira?</h1>
+        <div id="timer" class="mb-3">Tempo: 30s</div>
+        <div>
+            <span>Acertos: <span id="correctCount">0</span></span>
+            <span class="ms-3">Erros: <span id="wrongCount">0</span></span>
+        </div>
+        
+        <img id="flagImage" alt="Bandeira do país" class="my-3" style="display: none; max-width: 100%; height: auto;">
+
+        <div class="d-flex flex-column align-items-center">
+            <div id="options" class="mb-3"></div>
+            <div id="result"></div>
+        </div>
+        
+        <button id="nextButton" style="display:none;" class="btn btn-primary mt-3">Próximo</button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
